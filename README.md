@@ -51,7 +51,7 @@ import {
     generateKeypair,
     signMessage,
     verifySignature,
-} from "lattice-crypto-js/dilithium-api";
+} from "lattice-crypto-js";
 
 async function example() {
     // Initialize the API (loads WebAssembly)
@@ -84,7 +84,7 @@ import {
     generateKeypair,
     signMessage,
     verifySignature,
-} from "lattice-crypto-js/dilithium-api";
+} from "lattice-crypto-js";
 
 (async () => {
     // Step 1: Initialize the API

@@ -72,7 +72,7 @@ import {
     generateKeypair,
     signMessage,
     verifySignature,
-} from "lattice-crypto-js/dilithium-api";
+} from "lattice-crypto-js";
 ```
 
 ---
@@ -127,7 +127,7 @@ import type {
     SecretKey,
     Signature,
     Message,
-} from "lattice-crypto-js/types";
+} from "lattice-crypto-js"/types";
 ```
 
 ---
@@ -171,7 +171,7 @@ import {
     generateKeypair,
     signMessage,
     verifySignature,
-} from "lattice-crypto-js/dilithium-api";
+} from "lattice-crypto-js";
 
 (async () => {
     const api = await initializeDilithiumApi();

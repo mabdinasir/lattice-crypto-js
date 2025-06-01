@@ -9,6 +9,14 @@
     "files": [
         "dist"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mabdinasir/lattice-crypto-js.git"
+    },
+    "bugs": {
+        "url": "http://github.com/mabdinasir/lattice-crypto-js/issues"
+    },
+    "homepage": "http://github.com/mabdinasir/lattice-crypto-js#readme",
     "exports": {
         ".": {
             "import": "./dist/index.js",
