@@ -5,16 +5,25 @@
     "type": "module",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
-    "scripts": {
-        "build": "tsc",
-        "test": "vitest run",
-        "dev": "vitest watch"
+    "module": "dist/index.js",
+    "files": [
+        "dist"
+    ],
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "types": "./dist/index.d.ts"
+        }
     },
-    "author": "",
+    "scripts": {
+        "build": "tsc && npm run copy-wasm",
+        "copy-wasm": "cp src/wasm/dilithium.js dist/wasm/dilithium.js && cp src/wasm/dilithium.wasm dist/wasm/dilithium.wasm",
+        "prepublishOnly": "npm run build"
+    },
+    "author": "Mohamed Abdinasir",
     "license": "MIT",
     "devDependencies": {
-        "@types/node": "^22.15.29",
-        "typescript": "^5.8.3",
-        "vitest": "^3.1.4"
+        "typescript": "^5.x",
+        "ts-node": "^10.x"
     }
 }

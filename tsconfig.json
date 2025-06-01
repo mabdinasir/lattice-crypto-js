@@ -2,25 +2,13 @@
     "compilerOptions": {
         "target": "ES2020",
         "module": "ESNext",
-        "moduleResolution": "node",
-        "outDir": "./dist",
-        "rootDir": "./src",
-        "strict": true,
-        "esModuleInterop": true,
-        "forceConsistentCasingInFileNames": true,
-        "skipLibCheck": true,
-        "resolveJsonModule": true,
         "declaration": true,
-        "declarationMap": true,
-        "sourceMap": true,
-        "isolatedModules": true,
-        "noEmitOnError": true
+        "outDir": "dist",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "strict": true,
+        "allowJs": false,
+        "resolveJsonModule": true
     },
-    "include": [
-        "src",
-        "src/dilithium-api/initialize.ts",
-        "src/dilithium-api/generateKeypair.ts",
-        "src/dilithium-api/initializeDilithiumApi.ts"
-    ],
-    "exclude": ["node_modules", "dist", "tests"]
+    "include": ["src/**/*"]
 }
