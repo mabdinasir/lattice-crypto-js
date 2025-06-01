@@ -14,7 +14,7 @@ async function testDilithium() {
     console.log("Message to sign:", message);
 
     console.log("Signing message...");
-    const signature = signMessage(api, message, secretKeyPtr);
+    const { signature } = signMessage(api, message, secretKeyPtr);
     console.log("Signature (hex):", Buffer.from(signature).toString("hex"));
 
     console.log("Verifying signature...");
