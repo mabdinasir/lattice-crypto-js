@@ -1,6 +1,6 @@
 {
     "name": "lattice-crypto-js",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Lattice-based post-quantum cryptography library for JavaScript/TypeScript using WebAssembly",
     "type": "module",
     "main": "dist/index.js",
