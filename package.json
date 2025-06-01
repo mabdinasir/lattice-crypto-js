@@ -1,0 +1,20 @@
+{
+    "name": "lattice-crypto-js",
+    "version": "1.0.0",
+    "description": "Lattice-based post-quantum cryptography library for JavaScript/TypeScript using WebAssembly",
+    "type": "module",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "test": "vitest run",
+        "dev": "vitest watch"
+    },
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^22.15.29",
+        "typescript": "^5.8.3",
+        "vitest": "^3.1.4"
+    }
+}
